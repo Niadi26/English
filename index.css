@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(203, 168, 115, 0.826);
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.img__cont {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img__item {
+    width: 380px;
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+    border: 4px solid rgb(112, 246, 246);
+    transition: 1s;
+}
+
+.big-img {
+    width: 580px;
+    height: 400px;
+}
+
+.img {
+    cursor: pointer;
+    max-width: 100%;
+    height: 100%;
+}
+
+.img__item:hover {
+    transform: scale(1.1);
+}
+
+.popap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.popap__img {
+    width: 900px;
+    height: 600px;
+    background-color:rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 100px;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(112, 246, 246);
+}
+
+.popap__btn {
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color:rgb(78, 175, 175);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+}
+.title__cont {
+    width: 100%;
+    height: 500px;
+    margin-top: -50px;
+    background-image: url('./data/header.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Koulen', cursive;
+    letter-spacing: 7px;
+    font-size: 70px;
+    margin: 40px 0 20px;
+    color: rgb(137, 130, 130);
+}
+
+.theme__title {
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 65px;
+}
+.theme__txt {
+    font-family: 'Mukta', sans-serif;
+    margin: 30px 0;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+.txt {
+    border-bottom: 4px solid rgba(106, 250, 125, 0.619);
+    margin-bottom: 30px;
+}
