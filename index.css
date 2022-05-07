@@ -19,18 +19,18 @@ body {
 .img__cont {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .img__item {
     width: 380px;
-    height: 300px;
+    height: 290px;
     overflow: hidden;
     background-color: black;
     border: 4px solid rgb(112, 246, 246);
     transition: 1s;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .big-img {
@@ -83,6 +83,7 @@ body {
     font-size: 30px;
     line-height: 45px;
 }
+
 .title__cont {
     width: 100%;
     height: 500px;
@@ -97,6 +98,9 @@ body {
     font-size: 70px;
     margin: 40px 0 20px;
     color: rgb(137, 130, 130);
+}
+.theme {
+    max-width: 100%;
 }
 
 .theme__title {
@@ -117,3 +121,83 @@ body {
     border-bottom: 4px solid rgba(106, 250, 125, 0.619);
     margin-bottom: 30px;
 }
+
+@media (max-width: 1000px) {
+    .theme__txt {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .title__cont {
+        height: 400px;
+    }
+    .img__cont {
+        width: 100%;
+    }
+    .img__item {
+        height: 250px;
+    }
+    .popap__img {
+        width: 80%;
+        height: 550px;
+    }
+} 
+
+@media (max-width: 750px) {
+    .img__cont {
+        flex-flow: column;
+        align-items: center;
+    }
+    .img__item {
+        width: 330px;
+        margin: 10px 0;
+    }
+    .popap__img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title__cont {
+        height: 300px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .theme__title {
+        font-size: 45px;
+    }
+    .popap__img {
+        height: 350px;
+    }
+} 
+
+@media (max-width: 370px) {
+    .title__cont {
+        height: 200px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .theme__title {
+        font-size: 35px;
+    }
+    .theme__txt {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 5px;
+    }
+    .img__item {
+        width: 230px;
+        height: 200px;
+        margin: 5px;
+    }
+    .popap__img {
+        height: 250px;
+    }
+    .popap__btn {
+        width: 180px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+} 
